@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/be"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greetings"
+        android:text="Dinner"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+
+    <CheckBox
+        android:id="@+id/checkone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tues 5pm-10pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checktoo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wed 5pm-10pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:id="@+id/checkthri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thurs 4pm-9pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:id="@+id/checkfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fri 4pm-9pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkfiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sat 4pm-10pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greetings"
+        android:text="Lunch"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+
+
+    <CheckBox
+        android:id="@+id/checko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tues 11 am-2pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wed 12pm-2:30pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:id="@+id/checkthr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thurs 1pm-3pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+    <CheckBox
+        android:id="@+id/checkfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fri 12pm-2:30pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkfi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sat 11am-1pm"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        />
+
+
+
+
+</LinearLayout>
