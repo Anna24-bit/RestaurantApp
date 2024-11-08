@@ -44,9 +44,24 @@ public class Ndole {
 
     }
 
-    public void setProtein(){
-        
+    public void setProtein(String newProtein){
+        protein = newProtein;
     }
+
+    public void setSides(String newSides){
+        sides = newSides;
+    }
+
+    public void setQuantity(String newQuantity){
+        quantity = newQuantity;
+    }
+
+    public String toString(){
+        return "Protein " + protein + "/n" +  "sides" + sides + "quantity " + quantity + "price " + price;
+    }
+
+
+
 
 
 

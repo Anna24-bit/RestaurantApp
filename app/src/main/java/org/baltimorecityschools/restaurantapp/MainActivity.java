@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText UserET;
     Button nextBN;
     Intent goTopge;
+    Ndole order;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(goTopge);
             }
         });
+
+         
 
     }
 }
