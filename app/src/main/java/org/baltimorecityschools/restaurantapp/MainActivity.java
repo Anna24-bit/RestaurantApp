@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        order= new Ndole("chicken","salad",3, 5.99);
         // inflated variables
         tiTV=findViewById(R.id.txtv);
         intrTV=findViewById(R.id.introtxt);
