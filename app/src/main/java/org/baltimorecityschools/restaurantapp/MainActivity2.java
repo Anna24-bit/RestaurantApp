@@ -3,6 +3,7 @@ package org.baltimorecityschools.restaurantapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
@@ -33,11 +34,17 @@ public class MainActivity2 extends AppCompatActivity {
 
     Intent welcomeTopg;
 
+    // going to the menu
+    Button nextMenuB;
+    Intent goTopmenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main2);
+
+
 
         check1=findViewById(R.id.checkone);
         check2=findViewById(R.id.checktoo);
@@ -50,7 +57,7 @@ public class MainActivity2 extends AppCompatActivity {
         check33=findViewById(R.id.checkthr);
         check44=findViewById(R.id.checkfo);
         check55=findViewById(R.id.checkfi);
-
+        nextMenuB=findViewById(R.id.nxtbtn2);
 
         toastMsg="checked order";
         duration=0;
@@ -173,6 +180,14 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+
+        nextMenuB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goTopmenu=new Intent(MainActivity2.this, menuActivity.class);
+                startActivity(goTopmenu);
+            }
+        });
 
 
     }

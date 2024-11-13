@@ -21,14 +21,16 @@ public class MainActivity extends AppCompatActivity {
     EditText UserET;
     Button nextBN;
     Intent goTopge;
-    Ndole order;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        order= new Ndole("chicken","salad",3, 5.99);
+
+
+
         // inflated variables
         tiTV=findViewById(R.id.txtv);
         intrTV=findViewById(R.id.introtxt);
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(goTopge);
             }
         });
+
 
          
 

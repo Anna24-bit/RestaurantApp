@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yale"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ndole"
+            android:textAlignment="center"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:textColor="@color/black"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/zero"
+            android:id="@+id/quant"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/protein"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_chick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chicken"/>
+        <RadioButton android:id="@+id/radio_shrim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shrimp"/>
+        <RadioButton android:id="@+id/radio_beef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beef"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sides"
+        />
+
+<!--    sides-->
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_cass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cassava"/>
+        <RadioButton android:id="@+id/radio_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plantains"/>
+        <RadioButton android:id="@+id/radio_bob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bobolo"/>
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adOrd"
+        android:text="@string/add_order"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtotal"
+        android:id="@+id/sub"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tax"
+        android:id="@+id/tax"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero2"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:id="@+id/tote"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero3"
+
+        />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">RestaurantApp</string>
+    <string name="chick1">chicken</string>
+    <string name="sal1">salade</string>
+    <string name="zero">0</string>
+    <string name="protein">Choice of protein</string>
+    <string name="chicken">Chicken</string>
+    <string name="shrimp">Shrimp</string>
+    <string name="beef">Beef</string>
+    <string name="sides">sides</string>
+    <string name="cassava">cassava</string>
+    <string name="plantains">plantains</string>
+    <string name="bobolo">bobolo</string>
+    <string name="add_order">Add Order</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="_0">0</string>
+    <string name="tax">Tax</string>
+    <string name="zero2">0</string>
+    <string name="total">Total</string>
+    <string name="zero3">0</string>
+
 </resources>

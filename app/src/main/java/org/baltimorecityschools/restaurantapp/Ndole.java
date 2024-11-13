@@ -1,25 +1,25 @@
 package org.baltimorecityschools.restaurantapp;
 
-public class Question {
-    public static class Ndole {
+    public class Ndole {
+
         String protein;
         String sides;
         int quantity;
         double price;
         public static final double BASEPRICE = 12.99;
 
-        public Ndole(String pprotein,String psides,int pquantity,double pprice){
+        public Ndole(String pprotein,String psides,int pquantity){
         protein=pprotein;
         sides=psides;
         quantity=pquantity;
-        price=pprice;
+
         }
 
         public Ndole(){
             protein="";
             sides="";
             quantity=0;
-            price=0.0;
+
 
         }
 
@@ -65,4 +65,4 @@ public class Question {
 
 
     }
-}
+
