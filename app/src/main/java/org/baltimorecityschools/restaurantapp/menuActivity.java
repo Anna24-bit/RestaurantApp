@@ -2,6 +2,7 @@ package org.baltimorecityschools.restaurantapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -26,6 +27,7 @@ public class menuActivity extends MainActivity2 {
     RadioButton bobolorb;
     String sides;
 
+    double subTote;
     TextView Subnumtv;
     TextView Taxtnumtv;
     TextView Totenumtv;
@@ -34,8 +36,8 @@ public class menuActivity extends MainActivity2 {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_activity);
-        order= new Ndole(getString(R.string.chick1),getString(R.string.sal1),2, 5.99);
 
+        subTote=0.0;
         quantityet=findViewById(R.id.quant);
         chickenrb=findViewById(R.id.radio_chick);
         Shrimprb=findViewById(R.id.radio_shrim);
@@ -47,36 +49,49 @@ public class menuActivity extends MainActivity2 {
         Subnumtv=findViewById(R.id.sub);
         Taxtnumtv=findViewById(R.id.tax);
         Totenumtv=findViewById(R.id.tote);
-        quantity=Integer.parseInt(quantityet.getText().toString());
+        OrderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                quantity=Integer.parseInt(quantityet.getText().toString());
 
-        if(chickenrb.isChecked()){
-            protein ="chicken";
+                if(chickenrb.isChecked()){
+                    protein ="chicken";
 
-        }else if(Shrimprb.isChecked()){
-            protein="shrimp";
-
-
-        }else if(Beefrb.isChecked()){
-            protein="beef";
-
-        }else{
-            protein="nothing";
-        }
-
-        if(cassavarb.isChecked()){
-            sides ="Cassava";
-
-        }else if(plantainrb.isChecked()){
-            sides="plantain";
+                }else if(Shrimprb.isChecked()){
+                    protein="shrimp";
 
 
-        }else if(bobolorb.isChecked()){
-            sides="bobolo";
+                }else if(Beefrb.isChecked()){
+                    protein="beef";
 
-        }else{
-            sides="nothing";
-        }
-        Norder= new Ndole(protein,sides,quantity);
+                }else{
+                    protein="nothing";
+                }
+
+                if(cassavarb.isChecked()){
+                    sides ="Cassava";
+
+                }else if(plantainrb.isChecked()){
+                    sides="plantains";
+
+
+                }else if(bobolorb.isChecked()){
+                    sides="bobolo";
+
+                }else{
+                    sides="nothing";
+                }
+
+                Norder= new Ndole(protein,sides,quantity);
+
+                subTote=Norder.getPrice();
+                Subnumtv.setText(String.valueOf(subTote));
+
+            }
+
+        });
+
+
 
     }
 }

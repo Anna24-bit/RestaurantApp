@@ -100,13 +100,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subtotal"
-        android:id="@+id/sub"
+
 
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_0"
+        android:id="@+id/sub"
         />
     </LinearLayout>
 
@@ -121,12 +122,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tax"
-        android:id="@+id/tax"
+
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/zero2"
+        android:id="@+id/tax"
         />
     </LinearLayout>
 
@@ -140,14 +142,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/total"
-        android:id="@+id/tote"
+
     />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/zero3"
-
+        android:id="@+id/tote"
         />
 
     </LinearLayout>

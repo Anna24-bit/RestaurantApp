@@ -2,7 +2,7 @@
     <string name="app_name">RestaurantApp</string>
     <string name="chick1">chicken</string>
     <string name="sal1">salade</string>
-    <string name="zero">0</string>
+    <string name="zero"> set your quantity</string>
     <string name="protein">Choice of protein</string>
     <string name="chicken">Chicken</string>
     <string name="shrimp">Shrimp</string>

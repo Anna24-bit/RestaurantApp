@@ -12,6 +12,7 @@ package org.baltimorecityschools.restaurantapp;
         protein=pprotein;
         sides=psides;
         quantity=pquantity;
+        calcPrice();
 
         }
 
@@ -19,6 +20,7 @@ package org.baltimorecityschools.restaurantapp;
             protein="";
             sides="";
             quantity=0;
+            calcPrice();
 
 
         }
@@ -49,14 +51,35 @@ package org.baltimorecityschools.restaurantapp;
 
         public void setProtein(String newProtein){
             protein = newProtein;
+
+             calcPrice();
         }
+
+
 
         public void setSides(String newSides){
             sides = newSides;
+
+            calcPrice();
         }
 
         public void setQuantity(int newQuantity){
             quantity = newQuantity;
+            calcPrice();
+        }
+
+        public void calcPrice(){
+
+            price=BASEPRICE;
+            if(getProtein().equals("shrimp"))   price+=3.99;
+            else if (getProtein().equals("chicken"))  price+=2.99;
+
+            if(getSides().equals("cassava")) price+=1.99;
+            else if(getSides().equals("plantains")) price+=1.75;
+            else if (getSides().equals("bobolo")) price+=1.99;
+
+            price*=quantity;
+
         }
 
         public String toString(){
