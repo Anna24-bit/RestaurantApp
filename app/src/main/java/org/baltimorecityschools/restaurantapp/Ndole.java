@@ -83,7 +83,7 @@ package org.baltimorecityschools.restaurantapp;
         }
 
         public String toString(){
-            return "Protein " + protein + "/n" +  "sides" + sides + "quantity " + quantity + "price " + price;
+            return "\n" + "Protein: " + protein + "\n" +  " sides: " + sides + "\n" + " quantity: " + quantity + "\n" + " price: " + price;
         }
 
 

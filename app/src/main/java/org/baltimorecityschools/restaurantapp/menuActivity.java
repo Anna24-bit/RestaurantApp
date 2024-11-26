@@ -38,6 +38,7 @@ public class menuActivity extends MainActivity2 {
     public static final double TAX_RATE= 0.06;
     double tax;
     double total;
+    String myString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,7 @@ public class menuActivity extends MainActivity2 {
         tax=0.0;
         total=0.0;
         sendtote=findViewById(R.id.sendTote);
+        myString=" ";
 
 
         OrderButton.setOnClickListener(new View.OnClickListener() {
@@ -112,6 +114,8 @@ public class menuActivity extends MainActivity2 {
                 total= subTote + tax;
                 Totenumtv.setText(String.valueOf(total));
 
+                myString+=Norder.toString();
+
 
 
             }
@@ -123,7 +127,8 @@ public class menuActivity extends MainActivity2 {
             public void onClick(View view) {
                 String[] addresses = new String[] {getString(R.string.stringaddress)};
                 String subject = "total order";
-                String body= "Your total is " + total ;
+                String body= "Your total is: " + total + "\n" + " Subtotal is: " + subTote + "\n" + " Tax is: " + tax + "\n" +" "+ myString;
+
                 composeEmail(addresses, subject,body);
             }
         });

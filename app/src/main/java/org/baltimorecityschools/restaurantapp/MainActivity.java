@@ -1,6 +1,7 @@
 package org.baltimorecityschools.restaurantapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     EditText UserET;
     Button nextBN;
     Intent goTopge;
+    Button phoneApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         hrTV=findViewById(R.id.hrinfotxt);
         UserET=findViewById(R.id.username);
         nextBN=findViewById(R.id.nxtbtn);
+        phoneApp=findViewById(R.id.phbtn);
 
         nextBN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,8 +50,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-         
+        phoneApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialPhoneNumber("443-224-3852");
+            }
+        });
 
+    }
+
+    public void dialPhoneNumber(String phoneNumber) {
+        Intent intent = new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:" + phoneNumber));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
 

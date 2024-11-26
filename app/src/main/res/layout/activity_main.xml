@@ -49,17 +49,31 @@
 
         />
 
+
     <TextView
         android:id="@+id/hrinfotxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOURS:mon-sat  PHONE:443-123-808"
+        android:text="HOURS:mon-sat "
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="italic"
+        />
 
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE"
+        android:textStyle="italic"
+        android:id="@+id/phbtn"
+        android:textSize="13sp"
+        android:backgroundTint="@color/ya"
 
         />
+
+
 
     <EditText
         android:id="@+id/username"
@@ -68,14 +82,15 @@
         android:layout_marginBottom="15px"
         android:hint="Enter email before booking reservations " />
 
+
     <Button
-        android:layout_marginTop="15dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="next"
         android:textStyle="italic"
         android:id="@+id/nxtbtn"
-        android:textSize="22sp"
+        android:textSize="19sp"
         android:backgroundTint="@color/ye"
 
         />
